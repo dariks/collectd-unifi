@@ -2,7 +2,7 @@ const networkUnifi = require('ubiquiti-unifi')
 const fs = require('fs'),
       ini = require('ini');
 
-const config = ini.parse(fs.readFileSync('./unifi.conf', 'utf-8'));
+const config = ini.parse(fs.readFileSync('/opt/collectd-unifi/unifi.conf', 'utf-8'));
 
 const options = {
     username: config.unifi.username,
